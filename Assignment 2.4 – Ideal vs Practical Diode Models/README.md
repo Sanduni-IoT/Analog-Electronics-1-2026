@@ -1,11 +1,25 @@
-Comparison of Results
-In this simulation, I analyzed a simple series circuit using two different diode models: a generic Ideal Diode and a practical 1N4148 Silicon Diode.
-1. Difference in Turn-on VoltageThe primary difference observed is the "threshold" at which the diode begins to conduct. The ideal model functions almost like a perfect switch; it defaults to a sharp transition at $0V$ or a fixed $0.7V$ with no gradual lead-up. In contrast, the 1N4148 practical model exhibits an exponential "knee." It begins conducting a small amount of current around $0.5V$ and only reaches full conduction near $0.7V$. This reflects the physical reality of the depletion region in a silicon $P-N$ junction.
-   
-2. Difference in Current BehaviorOnce turned on, the ideal diode shows a perfectly linear current relationship (often modeled as a zero-ohm connection). The practical model, however, accounts for internal bulk resistance. As the input voltage increases, the practical diode's current curve begins to slightly flatten or "slope" compared to the vertical line of an ideal switch. This indicates that real components have physical limits and internal losses that the ideal model ignores.
-  
-Engineering Judgment
-Why ideal models are still used:Ideal models are invaluable for initial circuit design and "napkin math." When a system uses high voltages (e.g., $15V$ or $24V$), the $0.7V$ drop of a diode is negligible. Using an ideal model allows an engineer to quickly verify the logic and direction of current flow without getting bogged down in millivolt-level precision or complex exponential equations.
+Diode Model Analysis: Ideal vs. Practical (1N4148)
 
-When ideal models become inaccurate:
-Ideal models fail in low-voltage applications (such as $1.8V$ logic), where a $0.7V$ drop represents a massive percentage of the total signal. They are also insufficient when calculating power dissipation ($P = I \times V_f$) or thermal behavior, as they do not account for the energy lost as heat across the diode junction.
+1. Comparison of Results
+In this simulation, I analyzed a simple series circuit using two different diode models: a generic **Ideal Diode** and a practical **1N4148 Silicon Diode**.
+
+Difference in Turn-on Voltage
+
+The primary difference observed is the "threshold" at which the diode begins to conduct. 
+Ideal Model:** Functions like a perfect switch; it shows a sharp transition almost immediately.
+* **Practical Model (1N4148):** Exhibits an exponential "knee." It begins conducting a small amount of current around $0.5V$ and reaches full conduction near $0.7V$. This reflects the physical reality of the depletion region in a silicon $P-N$ junction.
+
+### Difference in Current Behavior
+* **Ideal Model:** Shows a perfectly linear relationship once "on".
+* **Practical Model:** Accounts for internal bulk resistance. As voltage increases, the curve shows physical limits and internal losses that the ideal model ignores.
+
+---
+
+## 2. Engineering Judgment
+
+### Why ideal models are still used:
+Ideal models are invaluable for initial circuit design and "napkin math". When a system uses high voltages (e.g., $15V$ or $24V$), a $0.7V$ drop is negligible. It allows for quick verification of logic and current flow direction.
+
+### When ideal models become inaccurate:
+* **Low-Voltage Applications:** In $1.8V$ logic, a $0.7V$ drop is a massive percentage of the total signal.
+* **Power & Heat:** They are insufficient for calculating power dissipation ($P = I \times V_f$) or thermal behavior.
