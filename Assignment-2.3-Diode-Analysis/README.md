@@ -1,11 +1,11 @@
-Assignment 2.3: Diode Datasheet Analysis
+Assignment 2.3 – Diode Datasheet Analysis
+Student Name:Sanduni Edirisinghe
+Diode Chosen:1N4148 (Fast Switching Diode)
+Manufacturer:Vishay / ON Semiconductor
 
-Selected Diode:1N4148  
-Manufacturer:Vishay / ON Semiconductor  
-Application:High-speed signal switching and protection.
+Project Contents
+* [Datasheet Link (PDF)](https://www.vishay.com/docs/81857/1n4148.pdf)
+* [Detailed Parameter Explanation](./explanation.md)
 
-Datasheet Link
-[Vishay 1N4148 Official Datasheet (PDF)](https://www.vishay.com/docs/81857/1n4148.pdf)
-
-Documentation
-A detailed explanation of the technical parameters can be found in the [explanation.md](./explanation.md) file.
+Application
+The 1N4148 is primarily used for **high-speed signal switching**. It is commonly found in digital logic circuits to protect sensitive components from voltage spikes (clamping).
