@@ -1,4 +1,4 @@
-Sanduni Ediirisinghe
+Sanduni Edirisinghe
 
 Sweep Range/Step: Transient analysis from 0 to 40ms
 
