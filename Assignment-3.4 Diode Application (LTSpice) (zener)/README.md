@@ -1,6 +1,7 @@
 Sanduni Edirisinghe
 
 Does the Zener diode keep the output voltage nearly constant?
+
 Yes, the Zener diode acts as a voltage regulator by maintaining a stable output voltage of approximately $10.22\text{V}$ despite the higher $16\text{V}$ input.
 
 Why?
