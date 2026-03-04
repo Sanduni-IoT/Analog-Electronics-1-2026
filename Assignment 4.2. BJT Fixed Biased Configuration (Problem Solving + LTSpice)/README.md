@@ -7,11 +7,16 @@ BJT Fixed-Bias Configuration Analysis
 To determine the operating point (Q-point) of a fixed-bias BJT circuit using mathematical calculations, graphical characteristics, and LTspice simulation.
 
 3. Circuit Parameters
+   
 
 Supply Voltage VCC = 20V
+
 Base Resistor RB = 470k ohms
+
 Collector Resistor RC = 910 ohms
+
 Transistor Beta = 135
+
 Base-Emitter Voltage VBE = 0.7V
 
 
@@ -20,7 +25,9 @@ Base-Emitter Voltage VBE = 0.7V
 Base Loop (KVL)
 
 VCC - IBRB -VBE = 0
+
 20V - IB(470k) - 0.7V = 0
+
 $I_B \approx 41.06\mu\text{A}$
 
 ### Collector Loop
