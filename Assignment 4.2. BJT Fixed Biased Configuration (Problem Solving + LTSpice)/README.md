@@ -1,22 +1,27 @@
-# BJT Fixed-Bias Configuration Analysis
+Sanduni Edirisinghe
 
-## 1. Objective
-The goal of this assignment is to analyze a BJT fixed-bias circuit to determine the operating point ($Q$-point) through three distinct methods: mathematical derivation, graphical analysis, and LTspice simulation.
+BJT Fixed-Bias Configuration Analysis
 
-## 2. Circuit Parameters
-The following parameters were provided for the analysis:
-* **Supply Voltage ($V_{CC}$):** 20V
-* **Base Resistor ($R_B$):** 470kΩ
-* **Collector Resistor ($R_C$):** 910Ω
-* **Transistor Beta ($\beta$):** 135
-* **Base-Emitter Voltage ($V_{BE}$):** 0.7V (Assumed)
+1. Objective
+   
+To determine the operating point (Q-point) of a fixed-bias BJT circuit using mathematical calculations, graphical characteristics, and LTspice simulation.
 
----
+3. Circuit Parameters
 
-## 3. Mathematical Calculations
+Supply Voltage VCC = 20V
+Base Resistor RB = 470k ohms
+Collector Resistor RC = 910 ohms
+Transistor Beta = 135
+Base-Emitter Voltage VBE = 0.7V
 
-### Base Loop (KVL)
-$$I_B = \frac{V_{CC} - V_{BE}}{R_B} = \frac{20\text{V} - 0.7\text{V}}{470\text{k}\Omega} = 41.06\mu\text{A}$$
+
+3. Mathematical Calculations
+
+Base Loop (KVL)
+
+VCC - IBRB -VBE = 0
+20V - IB(470k) - 0.7V = 0
+$I_B \approx 41.06\mu\text{A}$
 
 ### Collector Loop
 $$I_C = \beta \cdot I_B = 135 \cdot 41.06\mu\text{A} = 5.54\text{mA}$$
