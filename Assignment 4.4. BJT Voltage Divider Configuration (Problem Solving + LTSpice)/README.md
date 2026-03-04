@@ -1,4 +1,4 @@
-***Sanduni Edirisinghe
+#Sanduni Edirisinghe
 
 # BJT Voltage-Divider Bias Analysis
 
