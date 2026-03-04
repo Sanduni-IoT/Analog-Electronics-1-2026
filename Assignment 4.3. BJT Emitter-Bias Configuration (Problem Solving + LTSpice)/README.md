@@ -26,16 +26,5 @@ To analyze a BJT emitter-bias circuit to determine the DC operating point and ve
 
 ---
 
-## 4. LTspice Simulation
-
-### Results Comparison
-The simulation was performed using a custom NPN transistor model (`.model MyBJT NPN(Bf=125)`).
-
-| Measurement | Theory | Simulation | Error (%) |
-| :--- | :--- | :--- | :--- |
-| $V_C$ | 17.93V | [Enter Value] | % |
-| $V_E$ | 9.77V | [Enter Value] | % |
-| $I_C$ | 4.41mA | [Enter Value] | % |
-
-## 5. Conclusion
+## 4. Conclusion
 The addition of the emitter resistor $R_E$ provides feedback that stabilizes the Q-point against variations in $\beta$. The calculations confirm that the transistor is operating in the **Active Region** since $V_{CE} > V_{CE(sat)}$.
