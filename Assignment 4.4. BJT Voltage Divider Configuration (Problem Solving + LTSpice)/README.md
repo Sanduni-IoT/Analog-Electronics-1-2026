@@ -33,15 +33,5 @@ Approximate analysis is valid if $\beta R_E \geq 10R_2$:
 
 ---
 
-## 5. LTspice Simulation
-
-### Results Comparison
-| Measurement | Theoretical (Approx) | LTspice Result |
-| :--- | :--- | :--- |
-| $V_B$ | 3.13 V | [Insert Value] |
-| $V_C$ | 9.98 V | [Insert Value] |
-| $I_C$ | 2.43 mA | [Insert Value] |
-| $V_{CE}$ | 7.55 V | [Insert Value] |
-
-## 6. Conclusion
+## 5. Conclusion
 The circuit is properly biased in the active region. The small differences between theory and simulation are expected due to the approximate nature of the manual calculation compared to the precision of the SPICE model.
