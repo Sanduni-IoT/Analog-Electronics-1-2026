@@ -1,5 +1,5 @@
 # Analog Electronics-1 (2026)
-## Assignment 1: 
+## Assignment : Art of Electronic Lab
 
 **Student Name: Sanduni Edirisinghe
 
